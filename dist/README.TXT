@@ -1,10 +1,7 @@
 ========================
 BUILD OUTPUT DESCRIPTION
 ========================
-biulded by dev:mina maher
-Lin: https://www.linkedin.com/in/mena-maher-39a013215/
-in : 12/18/2021
-========================
+
 When you build an Java application project that has a main class, the IDE
 automatically copies all of the JAR
 files on the projects classpath to your projects dist/lib folder. The IDE

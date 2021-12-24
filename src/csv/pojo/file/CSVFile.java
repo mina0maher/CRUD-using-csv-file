@@ -5,7 +5,6 @@
  */
 package csv.pojo.file;
 
-import csv.UI.forms.CompanyForm;
 import csv.UI.forms.LoginFrame;
 import csv.pojo.CSVFile.CSVservices;
 import csv.pojo.Company.Employee;

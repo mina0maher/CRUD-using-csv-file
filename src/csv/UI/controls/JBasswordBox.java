@@ -8,7 +8,6 @@ package csv.UI.controls;
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPasswordField;
-import javax.swing.JTextField;
 
 /**
  *
