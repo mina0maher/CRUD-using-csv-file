@@ -38,6 +38,18 @@ public class LoginFrame extends javax.swing.JFrame {
         loginLoginButton = new csv.UI.controls.JButtonBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("login form");
+        setResizable(false);
+        addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                formPropertyChange(evt);
+            }
+        });
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
@@ -56,6 +68,12 @@ public class LoginFrame extends javax.swing.JFrame {
         loginAdminName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginAdminNameActionPerformed(evt);
+            }
+        });
+
+        loginPassword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                loginPasswordKeyPressed(evt);
             }
         });
 
@@ -134,6 +152,20 @@ private void login(){
 }
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
     }//GEN-LAST:event_formKeyPressed
+
+    private void loginPasswordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loginPasswordKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER){
+            login();
+        }
+    }//GEN-LAST:event_loginPasswordKeyPressed
+
+    private void formPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_formPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_formPropertyChange
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
