@@ -5,7 +5,10 @@
  */
 package csv.UI.forms;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -142,6 +145,9 @@ private void login(){
            CompanyForm f = new CompanyForm();
            f.pack();
            f.setLocationRelativeTo(null);
+           Image icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\maher\\Documents\\NetBeansProjects\\CSV file\\src\\csv\\UI\\team.png");
+f.setIconImage(icon);
+f.setIconImage(new ImageIcon("C:\\Users\\maher\\Documents\\NetBeansProjects\\CSV file\\src\\csv\\UI\\team.png").getImage());
            f.setVisible(true);
            this.dispose();
        }else{
@@ -210,4 +216,5 @@ private void login(){
     private javax.swing.JButton loginLoginButton;
     private javax.swing.JPasswordField loginPassword;
     // End of variables declaration//GEN-END:variables
+
 }

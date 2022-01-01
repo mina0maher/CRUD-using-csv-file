@@ -8,6 +8,9 @@ package csv.pojo.file;
 import csv.UI.forms.LoginFrame;
 import csv.pojo.CSVFile.CSVservices;
 import csv.pojo.Company.Employee;
+import java.awt.Image;
+import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -24,6 +27,9 @@ public class CSVFile {
 LoginFrame f = new LoginFrame ();
 f.pack();
 f.setLocationRelativeTo(null);
+Image icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\maher\\Documents\\NetBeansProjects\\CSV file\\src\\csv\\UI\\team.png");
+f.setIconImage(icon);
+f.setIconImage(new ImageIcon("C:\\Users\\maher\\Documents\\NetBeansProjects\\CSV file\\src\\csv\\UI\\team.png").getImage());
 f.setVisible(true);
     }
     
