@@ -147,7 +147,6 @@ private void login(){
            f.setLocationRelativeTo(null);
            Image icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\maher\\Documents\\NetBeansProjects\\CSV file\\src\\csv\\UI\\team.png");
 f.setIconImage(icon);
-f.setIconImage(new ImageIcon("C:\\Users\\maher\\Documents\\NetBeansProjects\\CSV file\\src\\csv\\UI\\team.png").getImage());
            f.setVisible(true);
            this.dispose();
        }else{
