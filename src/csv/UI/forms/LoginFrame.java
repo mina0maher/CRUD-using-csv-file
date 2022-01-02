@@ -140,12 +140,12 @@ public class LoginFrame extends javax.swing.JFrame {
 private void login(){
      String username = loginAdminName.getText();
        String password = loginPassword.getText();
-       if(username.equals("admin")&&password.equals("admin")){
+       if(username.equals("Eng.bondok")&&password.equals("bondok")){
            CompanyForm f = new CompanyForm();
            f.pack();
            f.setLocationRelativeTo(null);
            Image icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\maher\\Documents\\NetBeansProjects\\CSV file\\src\\csv\\UI\\team.png");
-f.setIconImage(icon);
+         f.setIconImage(icon);
            f.setVisible(true);
            this.dispose();
        }else{
