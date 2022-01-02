@@ -24,7 +24,7 @@ public class CSVFile {
      */
     public static void main(String[] args) throws Exception {
        CSVservices reader = new CSVservices();
-       for(Employee employee :reader.csvReader());
+       reader.csvReader();
 LoginFrame f = new LoginFrame ();
 f.pack();
 f.setLocationRelativeTo(null);
