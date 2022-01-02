@@ -30,7 +30,7 @@ private static String desktopPath ;
     }
 
 ///////////////////////////////
-    public void csvReader() throws Exception{
+    public void csvReader() {
         BufferedReader br;
         String line ;
         try {
