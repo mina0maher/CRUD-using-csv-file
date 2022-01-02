@@ -140,7 +140,7 @@ public class LoginFrame extends javax.swing.JFrame {
 private void login(){
      String username = loginAdminName.getText();
        String password = loginPassword.getText();
-       if(username.equals("admin")&&password.equals("admin")){
+       if(username.equals("Eng.bondok")&&password.equals("bondok")){
            CompanyForm f = new CompanyForm();
            f.pack();
            f.setLocationRelativeTo(null);
