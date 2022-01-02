@@ -30,7 +30,7 @@ private static String desktopPath ;
     }
 
 ///////////////////////////////
-    public LinkedList<Employee> csvReader() throws Exception{
+    public void csvReader() throws Exception{
         BufferedReader br;
         String line ;
         try {
@@ -40,7 +40,7 @@ private static String desktopPath ;
           }
         }catch(Exception e ){
         }
-        return employeeList;
+        
     }
     
     

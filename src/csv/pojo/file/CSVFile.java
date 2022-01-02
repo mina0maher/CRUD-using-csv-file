@@ -7,10 +7,8 @@ package csv.pojo.file;
 
 import csv.UI.forms.LoginFrame;
 import csv.pojo.CSVFile.CSVservices;
-import csv.pojo.Company.Employee;
 import java.awt.Image;
 import java.awt.Toolkit;
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -24,7 +22,7 @@ public class CSVFile {
      */
     public static void main(String[] args) throws Exception {
        CSVservices reader = new CSVservices();
-       for(Employee employee :reader.csvReader());
+      reader.csvReader();
 LoginFrame f = new LoginFrame ();
 f.pack();
 f.setLocationRelativeTo(null);
